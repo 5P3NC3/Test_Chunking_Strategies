@@ -1,0 +1,30 @@
+# configs/final_experiment.yaml
+# The final, most stable configuration for running experiments.
+
+# --- Local LLM for RAG generation ---
+llm_provider: "ollama"
+llm_model: "phi:latest" # Using a small, fast local model for generation
+
+# --- Document and Chunking Settings ---
+document_type: "pdf"
+strategies:
+  - "sentence_splitter"
+  - "token_text_splitter"
+  - "semantic_splitter"
+  - "recursive_character"
+  - "hierarchical"
+chunk_size: 512
+chunk_overlap: 50
+
+# --- Evaluation Settings ---
+mode: "full" 
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+use_venice_evaluation: true
+# --- Using the most reliable model for the evaluation task ---
+venice_model: "llama-3.3-70b"
+
+# --- Questions ---
+# Leaving this empty so it loads from pdf_ground_truth.json
+Questions: []
+
+

@@ -1,0 +1,46 @@
+# configs/venice_ai.yaml
+# Configuration for using Venice AI API
+
+chunk_size: 512
+chunk_overlap: 50
+
+# Use Venice AI as the LLM provider
+llm_provider: "venice"
+llm_model: "llama-3.2-3b"  # Fast, supports function calling
+
+# Available Venice AI models:
+# - llama-3.2-3b            # Fast, 131k context, function calling
+# - llama-3.1-8b            # Balanced performance
+# - llama-3.1-70b           # High quality responses
+# - llama-3.1-405b          # Best quality (slower)
+# - mixtral-8x7b            # Good for coding tasks
+# - hermes-3-llama-3.1-8b   # Optimized for conversation
+# - deepseek-coder-v2-lite  # Best for code generation
+# - nous-hermes-2-mixtral-8x7b  # General purpose
+
+# Embedding model (still local)
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+# Disable vLLM (using Venice API instead)
+use_vllm: false
+
+# Vector database settings
+vector_db_host: "localhost"
+vector_db_port: 6333
+collection_prefix: "rag_venice"
+
+# Evaluation mode
+mode: "quick"  # or "full" or "stats_only"
+
+# Strategies to test
+strategies: ["sentence_splitter", "token_text_splitter"]
+document_type: "pdf"
+
+# Test questions
+Questions:
+  - question: "What is it considered a sin to kill in Harper Lee's novel?"
+    answer: "A Mockingbird."
+  - question: "What embedding model will be used in the experiment?"
+    answer: "The embedding model to be used is bge-m3:567m."
+  - question: "What federal holiday is May 26 in 2025?"
+    answer: "In 2025, May 26th is Memorial Day."

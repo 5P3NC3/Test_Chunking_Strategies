@@ -1,0 +1,36 @@
+# Venice AI Evaluation Configuration
+# Uses your chosen local LLM for RAG generation and Venice AI for RAGAS evaluation
+
+chunk_size: 512
+chunk_overlap: 50
+
+# Local LLM for RAG generation (you can change this)
+llm_provider: "ollama"  # or "venice" if you want to use Venice for generation too
+llm_model: "llama3.1:8b"  # or any Venice model ID
+
+# Local embedding model (recommended for consistency)
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+# Venice AI evaluation settings
+use_venice_evaluation: true
+venice_model: "qwen3-235b"  # Always use the best model for evaluation
+
+# System settings
+use_vllm: false
+vector_db_host: "localhost"
+vector_db_port: 6333
+collection_prefix: "rag_venice_eval"
+
+# Experiment settings
+mode: "quick"
+document_type: "pdf"
+strategies: ["sentence_splitter", "token_text_splitter"]
+
+# Test questions from your ground truth
+Questions:
+  - question: "What is it considered a sin to kill in Harper Lee's novel?"
+    answer: "A Mockingbird."
+  - question: "What embedding model will be used in the experiment?"
+    answer: "The embedding model to be used is bge-m3:567m."
+  - question: "What federal holiday is May 26 in 2025?"
+    answer: "In 2025, May 26th is Memorial Day."

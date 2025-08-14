@@ -1,0 +1,118 @@
+{
+  "config": {
+    "llm_provider": "ollama",
+    "llm_model": "mistral:latest",
+    "mode": "full",
+    "document_type": "txt",
+    "strategies": [
+      "sentence_splitter",
+      "token_text_splitter",
+      "semantic_splitter",
+      "recursive_character",
+      "hierarchical"
+    ],
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "use_vllm": false,
+    "use_venice_evaluation": true,
+    "venice_model": "llama-3.3-70b",
+    "Questions": [
+      {
+        "question": "Who is the narrator of Moby Dick?",
+        "answer": "The story is narrated by a character who asks to be called Ishmael."
+      },
+      {
+        "question": "What is the name of Captain Ahab's whaling ship?",
+        "answer": "Captain Ahab's ship is named the Pequod."
+      },
+      {
+        "question": "What is Captain Ahab's all-consuming obsession?",
+        "answer": "Captain Ahab is obsessed with hunting and killing the great white whale known as Moby Dick, which took his leg on a previous voyage."
+      },
+      {
+        "question": "Who is the first mate of the Pequod and what is his general disposition?",
+        "answer": "The first mate is Starbuck, who is a responsible, practical, and cautious Quaker. He often serves as a voice of reason against Ahab's obsession."
+      },
+      {
+        "question": "What did Moby Dick do to Captain Ahab on a previous voyage?",
+        "answer": "The whale reaped away Captain Ahab's leg, leaving him with an ivory leg made from a sperm whale's jaw."
+      },
+      {
+        "question": "What is Queequeg's profession and where is he from?",
+        "answer": "Queequeg is an expert harpooneer from a fictional island in the South Seas called Kokovoko."
+      },
+      {
+        "question": "What reward does Ahab promise to the sailor who first spots the white whale?",
+        "answer": "Ahab nails a Spanish ounce of gold, a doubloon, to the mainmast as a reward for the first person to spot Moby Dick."
+      },
+      {
+        "question": "What material is Ahab's prosthetic leg made from?",
+        "answer": "His prosthetic leg is crafted from the polished bone of a sperm whale's jaw."
+      },
+      {
+        "question": "What is the ultimate fate of the coffin originally built for Queequeg?",
+        "answer": "The coffin, initially built for Queequeg when he was ill, is later repurposed as a life-buoy and is the object that saves Ishmael's life after the Pequod sinks."
+      },
+      {
+        "question": "How does the hunt for Moby Dick conclude for Captain Ahab and his ship?",
+        "answer": "Captain Ahab is ultimately killed when the harpoon line wraps around his neck, dragging him into the sea. Moby Dick then rams and sinks the Pequod, killing all crew members except for Ishmael."
+      },
+      {
+        "question": "What is the name of the inn where Ishmael first meets Queequeg?",
+        "answer": "Ishmael first meets Queequeg at the Spouter-Inn in New Bedford."
+      },
+      {
+        "question": "What is the subject of Father Mapple's sermon in the Whaleman's Chapel?",
+        "answer": "Father Mapple delivers a powerful sermon on the biblical story of Jonah and the Whale."
+      },
+      {
+        "question": "Besides Starbuck, who are the second and third mates of the Pequod?",
+        "answer": "The second mate is Stubb, who is jovial and easy-going, and the third mate is Flask, who is short, stout, and very aggressive in hunting whales."
+      },
+      {
+        "question": "What is the 'try-works' on the Pequod?",
+        "answer": "The try-works is the brick and mortar furnace on the deck of the ship used for rendering whale blubber into valuable oil."
+      },
+      {
+        "question": "Who is Pip and what happens to him?",
+        "answer": "Pip is a young African-American cabin boy who goes insane from loneliness and the vastness of the sea after being left adrift for a time."
+      },
+      {
+        "question": "What does the white whale, Moby Dick, seem to symbolize to Captain Ahab?",
+        "answer": "To Ahab, Moby Dick symbolizes all the malicious, inscrutable, and unknowable evil in the universe, and he sees it as his personal antagonist."
+      },
+      {
+        "question": "What do the whalers call the event of being towed at high speed by a harpooned whale?",
+        "answer": "This event is referred to as a 'Nantucket sleighride.'"
+      },
+      {
+        "question": "Who is Fedallah?",
+        "answer": "Fedallah is a mysterious and prophetic Parsee who serves as Ahab's personal harpooneer and is part of his secret whaleboat crew."
+      },
+      {
+        "question": "What prophecy does Fedallah make regarding Ahab's death?",
+        "answer": "Fedallah prophesies that Ahab will see two hearses before he dies\u2014one not made by mortal hands and the other made of American wood\u2014and that only hemp can kill him."
+      },
+      {
+        "question": "Which ship finds Ishmael after the sinking of the Pequod?",
+        "answer": "Ishmael is rescued by the Rachel, another whaling ship that was also searching for its own lost crew members."
+      }
+    ]
+  },
+  "chunking_stats": {
+    "total_documents": 2,
+    "total_chunks": 38900,
+    "processing_time": 133.72649455070496,
+    "avg_chunk_size": 1689.1255012853471,
+    "min_chunk_size": 521,
+    "max_chunk_size": 2526,
+    "chunks_per_second": 290.892243385998,
+    "strategy_name": "token_text_splitter",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "chunk_size_config": 512,
+    "chunk_overlap_config": 50,
+    "document_stats": []
+  },
+  "document_stats": []
+}

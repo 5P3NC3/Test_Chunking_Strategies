@@ -1,0 +1,117 @@
+{
+  "config": {
+    "llm_provider": "ollama",
+    "llm_model": "mistral:latest",
+    "mode": "full",
+    "document_type": "docx",
+    "strategies": [
+      "sentence_splitter",
+      "token_text_splitter",
+      "recursive_character",
+      "hierarchical"
+    ],
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "use_vllm": false,
+    "use_venice_evaluation": true,
+    "venice_model": "llama-3.3-70b",
+    "Questions": [
+      {
+        "question": "What is the purpose of the Risk Management Framework (RMF) as described in the SP 800-37r2 draft?",
+        "answer": "The purpose of the Risk Management Framework is to provide a disciplined, structured, and repeatable process for managing cybersecurity and privacy risk that integrates security, privacy, and supply chain risk management activities into the system development life cycle."
+      },
+      {
+        "question": "What are the seven steps of the NIST RMF?",
+        "answer": "The seven steps of the Risk Management Framework are Prepare, Categorize, Select, Implement, Assess, Authorize, and Monitor."
+      },
+      {
+        "question": "What is the main objective of the 'Prepare' step in the RMF?",
+        "answer": "The objective of the 'Prepare' step is to carry out essential activities at the organization, mission and business process, and system levels to help prepare the organization to manage its security and privacy risks."
+      },
+      {
+        "question": "According to the NIST CSF Policy Template Guide, what are the five core Functions of the Cybersecurity Framework?",
+        "answer": "The five core Functions of the Cybersecurity Framework are Identify, Protect, Detect, Respond, and Recover."
+      },
+      {
+        "question": "What is the goal of the 'Identify' Function in the NIST CSF?",
+        "answer": "The 'Identify' Function is to develop the organizational understanding to manage cybersecurity risk to systems, people, assets, data, and capabilities."
+      },
+      {
+        "question": "What is a 'Framework Profile' in the context of the NIST CSF?",
+        "answer": "A Framework Profile is a representation of the outcomes that an organization has selected from the Framework Categories and Subcategories to describe its current cybersecurity state and its desired target state."
+      },
+      {
+        "question": "In the NIST CSF Audit Template, what is a key question related to the 'Protect' function's access control category?",
+        "answer": "Is access to assets and associated facilities limited to authorized users, processes, and devices, and to authorized activities and transactions?"
+      },
+      {
+        "question": "According to the NIST CSF Audit survey, what should an organization have in place regarding its supply chain risk management?",
+        "answer": "The organization should have a process to identify, establish, and assess cybersecurity requirements for suppliers and third-party partners of information systems, components, and services."
+      },
+      {
+        "question": "What is the role of an 'Authorizing Official' (AO) in the RMF process?",
+        "answer": "The Authorizing Official is a senior federal official or executive with the authority to formally assume responsibility for operating a system at an acceptable level of risk to organizational operations, assets, individuals, other organizations, and the Nation."
+      },
+      {
+        "question": "What does the 'Recover' Function of the NIST CSF focus on?",
+        "answer": "The 'Recover' Function focuses on developing and implementing appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cybersecurity event."
+      },
+      {
+        "question": "What is the primary output of the RMF 'Select' step?",
+        "answer": "The primary output of the 'Select' step is the documentation of the security and privacy controls that have been selected for the system and the organization."
+      },
+      {
+        "question": "What is the purpose of the 'Monitor' step in the Risk Management Framework?",
+        "answer": "The purpose of the 'Monitor' step is to maintain ongoing situational awareness of the security and privacy posture of the system and the organization to support risk management decisions."
+      },
+      {
+        "question": "How does NIST SP 800-37r2 define a 'system'?",
+        "answer": "A system is defined as any organized assembly of resources and procedures united and regulated by interaction or interdependence to accomplish a set of specific functions, including applications, networks, and cloud-based systems."
+      },
+      {
+        "question": "What does the 'Detect' Function of the NIST CSF enable an organization to do?",
+        "answer": "The 'Detect' Function enables the timely discovery of cybersecurity events."
+      },
+      {
+        "question": "What is the purpose of the 'Respond' Function in the NIST CSF?",
+        "answer": "The 'Respond' Function supports the ability to contain the impact of a potential cybersecurity event."
+      },
+      {
+        "question": "What are 'Tiers' used for within the NIST Cybersecurity Framework?",
+        "answer": "Tiers describe the degree to which an organization's cybersecurity risk management practices exhibit the characteristics defined in the Framework, ranging from informal and reactive (Partial) to agile and risk-informed (Adaptive)."
+      },
+      {
+        "question": "What is a key aspect of cybersecurity awareness and training according to the audit template?",
+        "answer": "A key aspect is ensuring that the workforce is provided cybersecurity awareness education and is adequately trained to perform their information security-related duties and responsibilities."
+      },
+      {
+        "question": "What does the audit template ask regarding an organization's incident response capabilities?",
+        "answer": "The template asks if response processes and procedures are executed and maintained to ensure timely response to detected cybersecurity events."
+      },
+      {
+        "question": "What is a fundamental question in the 'Identify' function concerning Asset Management?",
+        "answer": "A fundamental question is whether the data, personnel, devices, systems, and facilities that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to the organization\u2019s risk strategy."
+      },
+      {
+        "question": "What is the purpose of 'Protective Technology' as outlined in the CSF audit template?",
+        "answer": "The purpose of 'Protective Technology' is to ensure that technical security solutions are managed to protect the security and resilience of systems and assets, consistent with the organization's policies and procedures."
+      }
+    ]
+  },
+  "chunking_stats": {
+    "total_documents": 3,
+    "total_chunks": 171,
+    "processing_time": 0.5143930912017822,
+    "avg_chunk_size": 2596.561403508772,
+    "min_chunk_size": 240,
+    "max_chunk_size": 3110,
+    "chunks_per_second": 332.43059233258913,
+    "strategy_name": "token_text_splitter",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "chunk_size_config": 512,
+    "chunk_overlap_config": 50,
+    "document_stats": []
+  },
+  "document_stats": []
+}

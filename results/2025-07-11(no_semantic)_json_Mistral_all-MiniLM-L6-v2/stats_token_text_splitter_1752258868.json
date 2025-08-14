@@ -1,0 +1,117 @@
+{
+  "config": {
+    "llm_provider": "ollama",
+    "llm_model": "mistral:latest",
+    "mode": "full",
+    "document_type": "json",
+    "strategies": [
+      "sentence_splitter",
+      "token_text_splitter",
+      "recursive_character",
+      "hierarchical"
+    ],
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "use_vllm": false,
+    "use_venice_evaluation": false,
+    "venice_model": "llama-3.3-70b",
+    "Questions": [
+      {
+        "question": "What is the title of the JSON feed in hn_frontpage.json?",
+        "answer": "Hacker News: Front Page"
+      },
+      {
+        "question": "What is the home page URL for the Hacker News RSS feed?",
+        "answer": "https://news.ycombinator.com/"
+      },
+      {
+        "question": "Who is the author of the article titled \"X's CEO is out after failing at basically everything she claimed she wanted\"?",
+        "answer": "pseudolus"
+      },
+      {
+        "question": "What is the article URL for \"Executed Chinese prisoners likely used in UK exhibition (2021)\"?",
+        "answer": "https://www.theartnewspaper.com/2021/01/25/executed-chinese-prisoners-likely-used-in-uk-exhibition"
+      },
+      {
+        "question": "What programming language is the article \"Optimizing a Math Expression Parser in Rust\" about?",
+        "answer": "Rust"
+      },
+      {
+        "question": "What is the title of the article with the id \"https://news.ycombinator.com/item?id=44521457\"?",
+        "answer": "Underwater turbine spinning for 6 years off Scotland's coast is a breakthrough"
+      },
+      {
+        "question": "How many comments does the article \"Is Gemini 2.5 good at bounding boxes?\" have?",
+        "answer": "27"
+      },
+      {
+        "question": "What is the publication date of the article \"Flix \u2013 A powerful effect-oriented programming language\"?",
+        "answer": "2025-07-10T14:02:04Z"
+      },
+      {
+        "question": "What is the main topic of the article with the URL \"https://www.sciencealert.com/could-a-paper-plane-thrown-from-the-international-space-station-survive-the-flight\"?",
+        "answer": "Could a Paper Plane Thrown from the ISS Survive the Flight?"
+      },
+      {
+        "question": "What is the author's user ID for the article \"Show HN: Typeform was too expensive so I built my own forms\"?",
+        "answer": "preetsuthar17"
+      },
+      {
+        "question": "What is the name of the document referenced in v2_nf_components.json?",
+        "answer": "Workforce Framework for Cybersecurity (NICE Framework) (NIST SP 800-181 Rev 1)"
+      },
+      {
+        "question": "What is the version of the NICE Framework document?",
+        "answer": "2.0.0"
+      },
+      {
+        "question": "What does \"COMSEC\" stand for in the context of the \"Communications Security (COMSEC) Management\" work role?",
+        "answer": "Communications Security"
+      },
+      {
+        "question": "What is the description of the \"projection\" relationship type?",
+        "answer": "Represents a relationship between two elements."
+      },
+      {
+        "question": "What is the element identifier for the \"Cybersecurity Architecture\" work role?",
+        "answer": "DD-WRL-001"
+      },
+      {
+        "question": "What is the text associated with the task identifier \"T0077\"?",
+        "answer": "Develop secure code and error handling"
+      },
+      {
+        "question": "What is the text of the knowledge element \"K0018\"?",
+        "answer": "Knowledge of encryption algorithms"
+      },
+      {
+        "question": "What is the description of the \"DESIGN and DEVELOPMENT\" category?",
+        "answer": "Conducts research, conceptualizes, designs, develops, and tests secure technology systems, including on perimeter and cloud-based networks."
+      },
+      {
+        "question": "What is the primary responsibility of the \"Privacy Compliance\" work role?",
+        "answer": "Responsible for developing and overseeing an organization\u2019s privacy compliance program and staff, including establishing and managing privacy-related governance, policy, and incident response needs."
+      },
+      {
+        "question": "Which competency area describes a learner\u2019s capability to protect cloud data, applications, and infrastructure?",
+        "answer": "Cloud Security"
+      }
+    ]
+  },
+  "chunking_stats": {
+    "total_documents": 2,
+    "total_chunks": 2675,
+    "processing_time": 6.132535219192505,
+    "avg_chunk_size": 1037.3229906542056,
+    "min_chunk_size": 118,
+    "max_chunk_size": 1845,
+    "chunks_per_second": 436.1980656268009,
+    "strategy_name": "token_text_splitter",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "chunk_size_config": 512,
+    "chunk_overlap_config": 50,
+    "document_stats": []
+  },
+  "document_stats": []
+}

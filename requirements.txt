@@ -1,0 +1,39 @@
+# LlamaIndex packages (versions unpinned to resolve conflict)
+llama-index
+llama-index-llms-vllm
+llama-index-llms-ollama
+llama-index-embeddings-huggingface
+llama-index-vector-stores-qdrant
+llama-index-readers-file
+
+
+# VLLM and its strict dependency on torch
+vllm==0.5.1
+torch==2.3.0
+
+# RAG Evaluation
+ragas==0.1.9
+
+# Spacy and a compatible numpy version
+numpy==1.26.4
+spacy==3.7.5
+# Spacy model for semantic splitting
+en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1.tar.gz
+
+# Other essential libraries
+pandas
+structlog
+python-dotenv
+rich
+qdrant-client>=1.9.0
+langchain-community
+transformers
+accelerate
+psutil
+sentence-transformers
+PyYAML
+requests
+loguru
+python-pptx
+tabulate
+

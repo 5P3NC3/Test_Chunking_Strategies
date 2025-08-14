@@ -1,0 +1,162 @@
+{
+  "config": {
+    "llm_provider": "ollama",
+    "llm_model": "mistral:latest",
+    "mode": "full",
+    "document_type": "pdf",
+    "strategies": [
+      "sentence_splitter",
+      "token_text_splitter",
+      "semantic_splitter",
+      "recursive_character",
+      "hierarchical"
+    ],
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "embedding_model": "intfloat/e5-large-v2",
+    "use_vllm": false,
+    "use_venice_evaluation": true,
+    "venice_model": "llama-3.3-70b",
+    "Questions": [
+      {
+        "question": "What embedding model will be used in the experiment?",
+        "answer": "The embedding model to be used is bge-m3:567m."
+      },
+      {
+        "question": "What are the three main attacker objectives in the taxonomy of attacks on predictive AI (PredAI) systems as defined in the NIST document?",
+        "answer": "The three main attacker objectives are availability breakdown, integrity violation, and privacy compromise."
+      },
+      {
+        "question": "What federal holiday is May 26 in 2025?",
+        "answer": "In 2025, May 26th is Memorial Day."
+      },
+      {
+        "question": "According to the NIST document, what are some examples of privacy compromise attacks in predictive AI systems?",
+        "answer": "Examples include data reconstruction, membership-inference attacks, training data extraction, attribute inference attacks, and property inference."
+      },
+      {
+        "question": "What are the GenAI Stages of Learning according to the Machine Learning pdf?",
+        "answer": "The GenAI Stages of Learning are pre-training, supervised fine-tuning, reward modeling, and reinforcement learning from human feedback."
+      },
+      {
+        "question": "Describe the Ad Hoc maturity level.",
+        "answer": "The Ad Hoc maturity level indicates that an organization has not defined formal processes, policies, or procedures for the specific cybersecurity activity being evaluated."
+      },
+      {
+        "question": "What are the different maturity levels in the Maturity Model pdf?",
+        "answer": "The five maturity levels are Ad Hoc (Level 1), Defined (Level 2), Consistently Implemented (Level 3), Managed and Measurable (Level 4), and Optimized (Level 5)."
+      },
+      {
+        "question": "In the To Kill a Mockingbird pdf, who says the following quote: \"Real courage is when you know you\u2019re licked before you begin, but you begin anyway and see it through no matter what.\"",
+        "answer": "Atticus Finch."
+      },
+      {
+        "question": "How does the NIST document define 'adversarial example'?",
+        "answer": "An adversarial example is a modified testing sample that induces misclassification or misbehavior of a machine learning model at deployment time."
+      },
+      {
+        "question": "What is it considered a sin to kill in Harper Lee's novel?",
+        "answer": "A Mockingbird."
+      },
+      {
+        "question": "According to the FY 2025 IG FISMA Metrics Evaluation Guide, what does OMB consider an 'effective' level of security?",
+        "answer": "The Office of Management and Budget (OMB) believes that achieving a 'managed and measurable' (level 4) maturity level or above represents an effective level of security."
+      },
+      {
+        "question": "How many core metrics are assessed annually by the IGs in the FISMA evaluation?",
+        "answer": "There are 20 core metrics that are assessed annually by the Inspectors General (IGs)."
+      },
+      {
+        "question": "What should an OIG do if a recommendation from a FISMA evaluation is overcome by events (OBE)?",
+        "answer": "The OIG should consider closing the recommendation with a status of 'Unresolved - Closed' and, if appropriate, issue an updated and refocused recommendation."
+      },
+      {
+        "question": "What are the six cybersecurity functions that Inspectors General use to determine an agency's effectiveness?",
+        "answer": "The six Cybersecurity Framework Functions are: govern, identify, protect, detect, respond, and recover."
+      },
+      {
+        "question": "What are the two broad classes of AI systems distinguished in the NIST AI 100-2e2025 report?",
+        "answer": "The report distinguishes between two broad classes of AI systems: predictive AI (PredAI) and generative AI (GenAI)."
+      },
+      {
+        "question": "In the context of Generative AI, what is a 'jailbreak'?",
+        "answer": "A jailbreak is a direct prompting attack intended to circumvent restrictions placed on model outputs, such as bypassing refusal behavior to enable misuse."
+      },
+      {
+        "question": "What are the three primary classes of defenses against adversarial evasion attacks, according to the NIST AI report?",
+        "answer": "The three main classes of defenses against evasion attacks are adversarial training, randomized smoothing, and formal verification."
+      },
+      {
+        "question": "What is the objective of the experiment detailed in the '2025-06-25_Test_Notes.pdf'?",
+        "answer": "The objective is to systematically evaluate the effectiveness of various document chunking strategies for Retrieval-Augmented Generation (RAG) applications."
+      },
+      {
+        "question": "What Language Model (LLM) is specified as a control for the chunking strategy experiment?",
+        "answer": "The Language Model (LLM) to be used is 11ama3.1:8b."
+      },
+      {
+        "question": "In 'To Kill a Mockingbird', what is Boo Radley's real first name?",
+        "answer": "Arthur."
+      },
+      {
+        "question": "What items did Jem and Scout find in the Radley's tree?",
+        "answer": "They found chewing gum, two polished Indian-head pennies, a ball of gray twine, two soap dolls carved to look like them, a tarnished spelling medal, and a broken pocket watch with a chain and aluminum knife."
+      },
+      {
+        "question": "Who is the narrator of 'To Kill a Mockingbird'?",
+        "answer": "The story is narrated by Jean Louise 'Scout' Finch."
+      },
+      {
+        "question": "What does Mr. Dolphus Raymond actually drink from his paper sack?",
+        "answer": "He drinks Coca-Cola."
+      },
+      {
+        "question": "Who saved Jem and Scout from Bob Ewell's attack at the end of the book?",
+        "answer": "Arthur 'Boo' Radley."
+      },
+      {
+        "question": "What day of the week will Christmas Day fall on in 2025?",
+        "answer": "In 2025, Christmas Day will be on a Thursday."
+      },
+      {
+        "question": "What is the date of the Juneteenth holiday in 2025?",
+        "answer": "The Juneteenth holiday in 2025 is on June 19."
+      },
+      {
+        "question": "Describe the 'Consistently Implemented' maturity level for the metric regarding an organization's inventory of information systems.",
+        "answer": "At the 'Consistently Implemented' level, the organization consistently implements its policies, procedures, and processes to maintain a comprehensive and accurate inventory of its information systems, including cloud systems, public-facing websites, and third-party systems, and system interconnections."
+      },
+      {
+        "question": "Explain the difference between a white-box and a black-box attack as per the NIST AI security document.",
+        "answer": "A white-box attack assumes the attacker has full knowledge of the machine learning system, including training data and architecture. A black-box attack assumes the attacker has minimal or no knowledge, often only having query access to the model's predictions."
+      },
+      {
+        "question": "Summarize the plot of the 'Boo Radley' game that Jem, Scout, and Dill play.",
+        "answer": "The game is a 'melancholy little drama' based on neighborhood gossip. The plot includes scenes where Boo (played by Jem) is locked up by his father, stabs his father's leg with scissors, and is eventually stuffed up a chimney. The children play various roles, including the Radley family members, the probate judge, and Miss Stephanie Crawford."
+      },
+      {
+        "question": "Explain the difference between Jem and Scout's views on what makes 'folks' different from one another, as discussed in Chapter 23.",
+        "answer": "Jem believes there are four kinds of folks, separated by class and race (e.g., ordinary like the Finches, Cunninghams, Ewells, and Negroes), and that background is determined by how long a family has been literate. Scout argues that there is 'just one kind of folks. Folks.'"
+      },
+      {
+        "question": "How does Aunt Alexandra define 'Fine Folks' and how does it contrast with Scout's understanding?",
+        "answer": "Aunt Alexandra believes that the longer a family has been living on a single patch of land, the finer they are. Scout had previously thought that 'Fine Folks' were people who did the best they could with the sense they had."
+      }
+    ]
+  },
+  "chunking_stats": {
+    "total_documents": 526,
+    "total_chunks": 4499,
+    "processing_time": 1.1406161785125732,
+    "avg_chunk_size": 258.2096021338075,
+    "min_chunk_size": 2,
+    "max_chunk_size": 496,
+    "chunks_per_second": 3944.3592724302275,
+    "strategy_name": "hierarchical",
+    "embedding_model": "intfloat/e5-large-v2",
+    "chunk_size_config": 512,
+    "chunk_overlap_config": 50,
+    "document_stats": []
+  },
+  "document_stats": []
+}

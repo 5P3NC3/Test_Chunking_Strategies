@@ -1,0 +1,21 @@
+# CPU-only configuration for debugging
+chunk_size: 512
+chunk_overlap: 50
+
+embedding_model: "BAAI/bge-small-en-v1.5"
+llm_model: "microsoft/phi-2"
+
+# Disable vLLM completely
+use_vllm: false
+force_cpu: true
+
+vector_db_host: "localhost"
+vector_db_port: 6333
+collection_prefix: "cpu_only_test"
+
+mode: "quick"
+strategies: ["sentence_splitter"]
+
+Questions:
+  - question: "What is it considered a sin to kill in Harper Lee's novel?"
+    answer: "A Mockingbird."
